@@ -17,10 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from . import views
+
 
 urlpatterns = [
-    # path('', ),
+    path('', include("ogscs_auth.urls")),
     path('', include("ogscs_student.urls")),
     path('', include("ogscs_staff.urls")),
     path('admin/', admin.site.urls),
