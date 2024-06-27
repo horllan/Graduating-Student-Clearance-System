@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5-+l(c9r#)w+7@d5f_1n+&_j*97@gq$&+u5#8b$&c-q$^_ii)e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # installed app
+    'ogscs_student',
+    'ogscs_staff',
+    'ogscs_auth',
+
+    # third party 
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
